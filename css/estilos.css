@@ -1,0 +1,194 @@
+:root{
+    box-sizing: border-box;
+    --soft-pink:#F2C2C6;
+    --pink:#F2949C;
+    --soft-violet:#BB99BF;
+    --violet:#593954;
+    --grey:#F2E4DF;
+}
+body{
+    font-family: "M PLUS Rounded 1c";
+    font-weight: 700;
+    font-style: normal;
+    background: var(--soft-violet);
+    padding: 0;
+    margin: 0;
+}
+.contenedoruno{
+    width: 100vw;
+    height: 520px;
+    margin: 40px 0 70px 0;
+    background-color: var(--soft-pink);
+    padding: 30px 0;
+    box-shadow: 0 0 10px rgba(243, 176, 176, 0.2);
+    border-top:7px solid var(--violet);
+    border-bottom: 7px solid var(--violet);
+}
+.contenedoruno button{
+    display: block;
+    background-color: var(--soft-violet);
+    border-radius: 50px;
+    padding: 15px 50px;
+    border-style: none;
+    font-family:"M Plus Rounded 1c";
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--violet);    
+    
+}
+.contenedoruno button:hover{
+    background-image: linear-gradient(to bottom, var(--soft-violet), var(--violet));
+    color: var(--grey);
+}
+.contenedoruno button:active{
+    background: var(--violet);
+    color: var(--grey);
+}
+.contenedortres{
+    background-color: var(--grey);
+    height: 410px;
+    border-bottom-left-radius: 45px; 
+    border-bottom-right-radius: 45px;
+    border-top: 7px solid var(--violet);
+}
+
+.contenedordos{
+    background-color: var(--soft-violet);
+    width: 1100px;
+    min-height: 410px;
+    margin: 0 auto;
+    border-radius: 50px;
+    border: 7px solid var(--violet);
+    padding-top: 4px;
+    box-sizing: border-box; 
+}
+.contenedordos span{
+    display: inline-block;
+    width: 78px;
+    height: 78px;
+}
+.contenedordos .cerrado{
+    margin-left: 13px;
+    background: url(../imgs/x.png);
+}
+.contenedordos .minimizar{
+    margin-left: 13px;
+    background: url(../imgs/min.png);
+}
+.contenedordos .reducir{
+    margin-left: 800px;
+    background: url(../imgs/-.png);
+}
+.contenedortres .inicio {
+    display: flex; 
+    align-items: center; 
+    text-align:right;
+    margin-right: 48px;
+    font-size: 23px;
+}
+
+.inicio .imagen_inicial {
+    background: url(../imgs/log.png);
+    background-size: cover;
+    width: 350px; 
+    height: 350px;
+    margin: 30px 20px 40px 50px; 
+}
+.inicio .texto{
+    margin-left: 100px ;
+}
+.inicio .texto button {
+    margin:0 auto;
+
+}
+.usuario_elige{
+    display: flex;
+}
+.usuario_elige ul {
+    display: flex; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    justify-content: center;
+}
+.usuario_elige ul li{
+    margin-top: 20px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.usuario_elige ul li div{
+    align-items: center;
+    width: 300px;
+    height:300px;
+    background-color: black;
+}
+.usuario_elige ul li:nth-child(3) {
+    margin-right: 0;
+}
+.usuario_elige button{
+    font-size: 25px;
+}
+.computador_elige{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    padding-top: 35px;
+    padding-left: 50px;
+    padding-right: 48px;  
+}
+.computador_elige .text{
+   position: relative;
+   margin-right: 400px;
+}
+.computador_elige .text h2{
+    font-size: 40px;
+    width: 600px;
+}
+.computador_elige .text h1{
+    font-size: 40px;
+}
+.computador_elige div{
+    width:300px ;
+    height: 300px;
+}
+.resultado{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.resultado h1{
+    font-size: 40px;
+    margin-bottom: 130px;
+}
+.resultado .resF{
+    display: flex;
+    gap: 400px;
+}
+.resultado button{
+    width: 500px;
+}
+.usuario_elige ul li .animacion_piedra, .animacion_piedra{
+    background: url(../imgs/sprite_piedra1.png);
+    animation: anima_sprite 1s infinite steps(23);
+ 
+}
+.usuario_elige ul li .animacion_papel, .animacion_papel{
+    background: url(../imgs/sprite_papel1.png);
+    animation: anima_sprite 1s infinite steps(23);
+}
+.usuario_elige ul li .animacion_tijera, .animacion_tijera{
+    background: url(../imgs/sprite_tijera1.png);
+    animation: anima_sprite 1s infinite steps(23);
+}
+.usuario_elige button{
+    margin-top: 20px;
+}
+@keyframes anima_sprite {
+    0%{
+       background-position: 0 0;
+    }
+    100%{
+       background-position: -6900px 0;
+    }
+}

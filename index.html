@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra Papel o Tijera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/funciones.js"></script>
+</head>
+
+<body>
+    <div class="contenedoruno">
+        <div class="contenedordos">
+            <span class="reducir"> </span>
+            <span class="minimizar"> </span>
+            <span class="cerrado"> </span>
+            <div class="contenedortres">
+
+
+                <div class="inicio">
+                    <div class="imagen_inicial"></div>
+                    <div class="texto">
+                        <h1>Piedra,Papel o Tijera</h1>
+                        <h2>Juega contra tu computador</h2>
+
+                        <button class="btn_inicio">Iniciar</button>
+                    </div>
+                </div>
+                <div class="usuario_elige">
+                    <ul>
+                        <li>
+                            <div class="animacion_piedra"></div>
+                            <button class="btn_Piedra">Piedra</button>
+                        </li>
+                        <li>
+                            <div class="animacion_papel"></div>
+                            <button class="btn_Papel">Papel</button>
+                        </li>
+                        <li>
+                            <div class="animacion_tijera"></div>
+                            <button class="btn_Tijera">Tijera</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="computador_elige">
+                    <div class="text">
+                        <h2>El computador eligió:</h2>
+                        <h1 class="eleccion_computador"></h1>
+                        <button class="btn_continuar">Continuar</button>
+                    </div>
+                    <div class="elecComp">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="resultado">
+                    <h1></h1>
+                    <div class="resF">
+                        <div class="finUs">
+                            <h2 class="u"></h2>
+                            <div></div>
+                        </div>
+                        <div class="finComp">
+                            <h2 class="c"></h2> 
+                            <div></div>
+                        </div>
+                        
+                    </div>
+                    <button class="btn_volver">Volver a empezar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
